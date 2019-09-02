@@ -2,6 +2,7 @@
 var wins = 0;
 var losses = 0;
 var attempts = 10;
+var playerGuess =[];
 addEventListener("keyup", myFunction);
 function myFunction() {
     let userGuess = String.fromCharCode(event.keyCode).toLowerCase();
@@ -24,8 +25,14 @@ function myFunction() {
         var winsBaby = document.getElementById("winsBaby");
         var takenLs = document.getElementById("takenLs");
         var cracksAtIt = document.getElementById("cracksAtIt");
+        var playerGuess= document.getElementById("playerGuess")
+
 
         winsBaby.textContent = "winsBaby: " + wins;
         takenLs.textContent = "takenLs: " + losses;
         cracksAtIt.textContent = "cracksAtIt: " + attempts;
+        playerGuess.textContent = "playerGuess: "+ userGuess;
+    
+
+        
     };
